@@ -5,8 +5,10 @@ sudo cp sources.list /etc/apt/sources.list
 sudo apt update
 
 # install normal software
-sudo apt -y install git fish g++ curl xclip python-pip fcitx-googlepinyin ack-grep tree
+sudo apt -y install git fish g++ curl xclip python-pip fcitx-googlepinyin ack-grep tree python3 python3-pip
 chsh -s /usr/bin/fish
+sudo pip3 install bs4
+git clone --depth=1 https://github.com/chestnutheng/wudao-dict && cd ./wudao-dict/wudao-dict && sudo sh setup.sh && cd ../../
 
 # install google-chrome-stable
 sudo dpkg -i google-chrome-stable_current_amd64.deb
