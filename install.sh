@@ -52,7 +52,7 @@ sudo ./install.sh
 cd ../
 
 # install latex
-# sudo apt -y install texlive-latex-base  texlive-latex-extra latex-cjk-all latex2html
+ sudo apt -y install texlive-latex-base  texlive-latex-extra latex-cjk-all latex2html
 
 # copy bin of myself
 cp -r ./bin ~/
@@ -60,7 +60,9 @@ sudo chown -R "$USER":"$USER" ~/bin
 
 
 # RSA-key
-# ssh-keygen -t rsa -C 'paladnix@outlook.com'
+ssh-keygen -t rsa -C 'paladnix@outlook.com'
+git config --global user.email "paladnix@outlook.com"
+git config --global user.name "paladnix"
 
 # install mysql
 #sudo apt install mysql-server
@@ -71,8 +73,19 @@ sudo chown -R "$USER":"$USER" ~/bin
 # sudo apt update
 # sudo apt install -y task thunderbird
 
-# sudo npm install hexo-cli -g
-# npm install hexo-deployer-git --save
+# install nodejs on ubuntu -version 8.x
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
 
+# install hexo blog system
+sudo npm install hexo-cli -g
+npm install hexo-deployer-git --save
 
+# install shadowsocks
+sudo pip install shadowsocks
+
+# start the shadowsocks:
+# sslocal -c shadowsocks.json
+# start the google-chrome with proxy: 
+# google-chrome --proxy-server=socks5://127.0.0.1:1080
 
