@@ -1,0 +1,45 @@
+[Icon Theme]
+Name=MacOSX-dark
+Comment=MacOSX-dark icons.
+
+Inherits=MacOSX,Adwaita,hicolor
+
+Example=directory-x-normal
+
+#Directory list
+Directories=actions/22,panel/16,panel/24,status/22,status/24,status/scalable
+
+[actions/22]
+Size=22
+Context=Actions
+Type=Scalable
+MinSize=8
+MaxSize=512
+
+[status/22]
+Size=22
+Context=Status
+Type=Scalable
+
+[status/24]
+Size=24
+Context=Status
+Type=Scalable
+
+[status/scalable]
+Size=16
+Context=Status
+Type=Scalable
+MinSize=8
+MaxSize=512
+
+[panel/16]
+Size=16
+Context=Status
+Type=Scalable
+
+[panel/24]
+Size=24
+Context=Status
+Type=Scalable
+
