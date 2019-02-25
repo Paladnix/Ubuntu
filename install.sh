@@ -49,6 +49,16 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 ####################################
+# auto run
+####################################
+# same as ./bin/sslocal.sh
+sudo cp ./bin/sslocal.sh /etc/init.d/
+sudo chmod 755 /etc/init.d/sslocal.sh
+cd /etc/init.d/
+sudo update-rc.d sslocal.sh defaults 95
+
+
+####################################
 # Wudao dict
 ####################################
 sudo pip3 install bs4
