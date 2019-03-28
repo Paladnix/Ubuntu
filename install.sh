@@ -143,7 +143,7 @@ cd ../
 ####################################
 # install latex
 ####################################
-sudo apt -y install texlive-latex-base  texlive-latex-extra latex-cjk-all latex2html
+sudo apt -y install texlive-latex-base  texlive-latex-extra latex-cjk-all latex2html texlive-xetex
 
 ####################################
 # copy bin of myself
@@ -210,9 +210,7 @@ sudo apt install -y mysql-server mysql-client php7.0-mysql
 #sudo mkdir /opt/java/
 #sudo mv ./jdk1.8.0_171 /opt/java/jdk1.8
 #echo "export JAVA_HOME=/opt/java/jdk1.8" >> /etc/profile
-#source /etc/profile
 #echo "export JRE_HOME=${JAVA_HOME}/jre" >> /etc/profile
-#source /etc/profile
 #echo "export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib" >> /etc/profile
 #echo "export PATH=${JAVA_HOME}/bin:$PATH" >> /etc/profile
 #source /etc/profile
