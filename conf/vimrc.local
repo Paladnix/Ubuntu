@@ -1,6 +1,7 @@
 set relativenumber  " 开启相对行号
 set cursorcolumn
 set cursorline
+autocmd filetype javascript setlocal et sta sw=2 sts=2
 highlight CursorLine   cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
 highlight CursorColumn cterm=NONE ctermbg=black ctermfg=NONE guibg=NONE guifg=NONE
 let g:airline_theme="wombat"

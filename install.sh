@@ -14,7 +14,7 @@ sudo apt -y install \
     git fish g++ curl xclip python-pip \
     fcitx-googlepinyin ack-grep tree \
     python3 python3-pip taskwarrior screen \
-    zsh zathura openssh-server
+    zsh zathura openssh-server jq
 
 ####################################
 # fix some bug of pip 
